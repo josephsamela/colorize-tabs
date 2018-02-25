@@ -20,10 +20,10 @@ Unfortunately `theme-color` remains unsupported on desktop. Today all major brow
 
 My goal is to support multiple browsers. 
 
-| Browser | Status            |
-| ------- |:-----------------:|
-| Firefox | beta              |
-| Chrome  | under development |
-| Edge    | not supported     |
-| Safari  | not supported     |
-| Opera   | not supported     |
+| Browser | Status            | Link   |
+| ------- |:-----------------:|--------|
+| Firefox | v1.0              |        |
+| Chrome  | under development |        |
+| Edge    | not supported     |        |
+| Safari  | not supported     |        |
+| Opera   | not supported     |        |
