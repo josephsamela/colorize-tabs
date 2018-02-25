@@ -7,7 +7,7 @@ Today many websites support `theme-color` and Chrome for Android looks 🔥🔥�
 
 ![mobile](images/mobile.gif)
 
-Unfortunately `theme-color` still remains unsupported on the desktop. All major browsers look basically the same - light gray with favicons. Let's spice things up!
+Unfortunately `theme-color` still remains unsupported on the desktop - just light gray with favicons. Let's spice things up!
 
 ![chrome](images/chrome.PNG)
 
