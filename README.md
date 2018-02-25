@@ -25,5 +25,3 @@ Unfortunately `theme-color` still remains unsupported on the desktop - just ligh
 Currently Firefox is the only browser with theme API support. [link](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/theme#Browser_compatibility)
 
 ![chrome](images/compatibility.PNG)
-
-So I can't build an extension for chrome...but I can switch to Firefox!
