@@ -1,6 +1,6 @@
-# Colorize Tabs
+![firefox](images/banner.png)
 
-## What is it?
+## What's Colorize Tabs?
 
 **Colorize Tabs** is a browser extension that colors tabs to match a website's `theme-color`.
 
