@@ -1,5 +1,5 @@
 # Colorize Tabs
-Since [Chrome 39](<https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android>) shipped with Android Lollipop in 2014 websites can set the color of the browser toolbar.
+Since [Chrome 39](<https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android>) shipped with Android Lollipop in 2014 websites can use `theme-color` to color the  browser toolbar.
 ```
 meta name="theme-color" content="#db5945">
 ```
