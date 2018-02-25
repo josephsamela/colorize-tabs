@@ -1,0 +1,30 @@
+{
+  "description": "Colorize tabs based on individual website theme-color!",
+  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/dynamic-theme",
+  "manifest_version": 2,
+  "name": "Colorize!",
+  "permissions": [
+    "alarms",
+    "theme",
+    "tabs",
+    "webNavigation"
+  ],
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+
+  "version": "1.0",
+  "applications": {
+    "gecko": {
+      "strict_min_version": "55.0a2"
+    }
+  }
+}
