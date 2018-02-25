@@ -4,7 +4,6 @@
   "manifest_version": 2,
   "name": "Colorize!",
   "permissions": [
-    "alarms",
     "theme",
     "tabs",
     "webNavigation"
@@ -21,10 +20,5 @@
     }
   ],
 
-  "version": "1.0",
-  "applications": {
-    "gecko": {
-      "strict_min_version": "55.0a2"
-    }
-  }
+  "version": "1.0"
 }
