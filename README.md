@@ -3,7 +3,7 @@ Since Chrome 39 shipped with Android Lollipop in 2014 developers could customize
 ```
 meta name="theme-color" content="#db5945">
 ```
-Today many websites support `theme-color` and Chrome for Android looks 🔥
+Today many websites support `theme-color` and Chrome for Android looks 🔥🔥🔥
 
 ![mobile](images/mobile.gif)
 
@@ -17,6 +17,8 @@ Unfortunately `theme-color` remains unsupported on desktop. Today all major brow
 
 ![firefox](images/firefox.gif)
 
+
+My goal is to support multiple browsers. 
 
 | Browser | Status            |
 | ------- |:-----------------:|
