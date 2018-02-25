@@ -6,6 +6,8 @@
 
 ![firefox](images/firefox.gif)
 
+Firefox Install - https://addons.mozilla.org/en-US/firefox/addon/colorize-tabs/
+
 ## What's `theme-color`?
 
 Since [Chrome 39](<https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android>) shipped with Android Lollipop in 2014 websites can use `theme-color` to customize the browser toolbar. Simply drop this tag in the head of a webpage!
