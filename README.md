@@ -6,7 +6,7 @@
 
 ![firefox](images/firefox.gif)
 
-Firefox Install - https://addons.mozilla.org/en-US/firefox/addon/colorize-tabs/
+Firefox - https://addons.mozilla.org/en-US/firefox/addon/colorize-tabs/
 
 ## What's `theme-color`?
 
@@ -24,6 +24,6 @@ Unfortunately `theme-color` still remains unsupported on the desktop - just ligh
 
 ## Browser Support?
 
-Currently Firefox is the only browser with theme API support. [link](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/theme#Browser_compatibility)
+Currently Firefox is the only browser with theme API support. [link](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/theme#Browser_compatibility) Hopefully other browsers will provide these APIs in future releases!
 
 ![chrome](images/compatibility.PNG)
