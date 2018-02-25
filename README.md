@@ -11,7 +11,7 @@ Unfortunately `theme-color` still remains unsupported on the desktop. All major 
 
 ![chrome](images/chrome.PNG)
 
-Boring tabs are no more with **Colorize Tabs** the a browser extension that brings color to *your* favorite browser!
+Boring tabs are gone with **Colorize Tabs** the extension that brings color to *your* favorite browser!
 
 ![firefox](images/firefox.gif)
 
