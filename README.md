@@ -13,7 +13,7 @@ Unfortunately `theme-color` remains unsupported on desktop. Today all major brow
 
 ![edge](images/edge.PNG)
 
-*Colorize Tabs* is an extension to bring this feature to your favorite browser!
+*Colorize Tabs* is a browser extension that brings this feature to your favorite browser!
 
 ![firefox](images/firefox.gif)
 
