@@ -22,7 +22,6 @@
 
 // https://developer.mozilla.org/en-US/Add-ons/WebExtensions
 
-
 function setTheme(theme_color) {
   // set theme
   if (theme_color === null) {
@@ -49,30 +48,25 @@ function setTheme(theme_color) {
 
 // When message with theme-color is recieved from content script
 function gotMessage(message, sender, sendResponse) {
-  console.log(message.theme_color);
   setTheme(message.theme_color);
 }
-
-// When message is recieved, set theme
-browser.runtime.onMessage.addListener(gotMessage);
 
 // Ping content script
 function update(activeInfo) {
   rsp = browser.tabs.sendMessage(activeInfo.tabId, "msg").catch(reset);
 }
 
-// When new tab is opened
+// Reset to default browser theme
 function reset() {
   browser.theme.reset()
 }
 
+// When message is recieved, set theme
+browser.runtime.onMessage.addListener(gotMessage);
+
 // Whenever tab switches or changes pages, get update 
 browser.tabs.onActivated.addListener(update);
-// browser.webNavigation.onCommitted.addListener(update);
 browser.webNavigation.onCompleted.addListener(update);
 browser.webNavigation.onDOMContentLoaded.addListener(update);
-
-
 browser.windows.onFocusChanged.addListener(update)
-
-browser.tabs.onCreated.addListener(reset)
+browser.tabs.onCreated.addListener(update)

@@ -5,20 +5,16 @@ function get_theme_color() {
     var element = document.querySelector('meta[name="theme-color"]');
     var theme_color = element && element.getAttribute("content");
 
-    console.log(theme_color)
-
+    // If no theme-color look for MS equivelant
     if (theme_color === null) {
         var element = document.querySelector('meta[name="msapplication-navbutton-color"]');
         var theme_color = element && element.getAttribute("content");
     }
-    console.log(theme_color)
-
+    // Again try for Apple's version
     if (theme_color === null) {
         var element = document.querySelector('meta[name="apple-mobile-web-app-status-bar-style"]');
         var theme_color = element && element.getAttribute("content");
     }
-    console.log(theme_color)
-
     return theme_color
 }
 
@@ -28,7 +24,6 @@ function gotMessage() {
     let msg = {
         "theme_color": theme_color,
     }
-    console.log(theme_color)
     browser.runtime.sendMessage(msg)
 }
 

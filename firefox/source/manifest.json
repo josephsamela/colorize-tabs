@@ -1,14 +1,18 @@
 {
-  "description": "Colorize tabs based on individual website theme-color!",
-  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/dynamic-theme",
-  "manifest_version": 2,
   "name": "Colorize!",
+  "description": "Colorize tabs based on individual website theme-color!",
+  "homepage_url": "https://github.com/JosephSamela/colorize-tabs",
+  "version": "1.0",
+  "icons": {
+    "48": "icon48.png",
+    "96": "icon96.png"
+  },
+  "manifest_version": 2,
   "permissions": [
     "theme",
     "tabs",
     "webNavigation"
   ],
-
   "background": {
     "scripts": ["background.js"]
   },
@@ -18,7 +22,5 @@
       "matches": ["<all_urls>"],
       "js": ["content.js"]
     }
-  ],
-
-  "version": "1.0"
+  ]
 }
