@@ -1,31 +1,27 @@
-# Colorize Browser Tabs
+# Colorize Tabs
 Since Chrome 39 shipped with Android Lollipop in 2014 developers could customize color of the browser toolbar. [link](<https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android>)
 ```
 meta name="theme-color" content="#db5945">
 ```
-You've probably visited looking 🔥🔥🔥
+Today many websites support `theme-color` and Chrome for Android looks 🔥🔥🔥
 
 ![mobile](images/mobile.gif)
 
-
-
-Unfortunately this feature never made it to desktop browsers.
-
+Unfortunately `theme-color` remains unsupported on desktop. Today all major browsers look pretty much the same - light gray with favicons. How 'bout we spice things up? 
 **Chrome**
 ![chrome](images/chrome.PNG)
 **Edge**
 ![edge](images/edge.PNG)
 
-
-Colorize Browser Tabs is an extension to bring this feature to *your* favorite browser.
+*Colorize Tabs* is an extension to bring this feature to your favorite browser!
 
 ![firefox](images/firefox.gif)
 
 
-| Browser         | Status            |
-| --------------- |:-----------------:|
-| Firefox Quantum | beta              |
-| Chrome          | under development |
-| Edge            | not supported     |
-| Safari          | not supported     |
-| Opera           | not supported     |
+| Browser | Status            |
+| ------- |:-----------------:|
+| Firefox | beta              |
+| Chrome  | under development |
+| Edge    | not supported     |
+| Safari  | not supported     |
+| Opera   | not supported     |
