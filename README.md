@@ -9,10 +9,8 @@ Today many websites support `theme-color` and Chrome for Android looks 🔥
 
 Unfortunately `theme-color` remains unsupported on desktop. Today all major browsers look the same - light gray with favicons. How about we spice things up? 
 
-**Chrome**
 ![chrome](images/chrome.PNG)
 
-**Edge**
 ![edge](images/edge.PNG)
 
 *Colorize Tabs* is an extension to bring this feature to your favorite browser!
