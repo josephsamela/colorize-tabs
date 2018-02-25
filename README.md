@@ -1,6 +1,6 @@
 # Colorize Tabs
 
-**Colorize Tabs** is a browser extension to color the toolbar according webpage `theme-color`.
+**Colorize Tabs** is a browser extension that colors tabs to match a website's `theme-color`.
 
 ![firefox](images/firefox.gif)
 
