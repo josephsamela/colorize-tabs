@@ -15,6 +15,9 @@ function get_theme_color() {
         var element = document.querySelector('meta[name="apple-mobile-web-app-status-bar-style"]');
         var theme_color = element && element.getAttribute("content");
     }
+
+    console.log(theme_color)
+
     return theme_color
 }
 

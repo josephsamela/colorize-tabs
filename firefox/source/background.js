@@ -22,13 +22,19 @@
 
 // https://developer.mozilla.org/en-US/Add-ons/WebExtensions
 
-function setTheme(theme_color) {
+function setTheme(theme_color, updated_tab) {
   // set theme
   if (theme_color === null) {
     // Site has no theme-color reset to default theme
     browser.theme.reset()
   }
   else {
+    if (theme_color === "#ffffff") {
+      textcolor = '#000'
+    }
+    else {
+      textcolor = '#fff'
+    }
     // Build theme from website theme_color
     theme = {
       images: {
@@ -36,24 +42,39 @@ function setTheme(theme_color) {
       },
       colors: {
         accentcolor: '#202340',
-        textcolor: '#fff',
+        textcolor: textcolor,
         toolbar: theme_color,
         toolbar_bottom_separator: theme_color,
       }
     }
-    // Update browser theme
-    browser.theme.update(theme);
+
+    browser.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+      var currentTab = tabs[0];
+      console.log(currentTab.id)
+      if (currentTab.id === updated_tab.id) { // Sanity check
+        browser.theme.update(theme);
+      }
+      else {
+      }
+    });
+
+
+
   }
 }
 
 // When message with theme-color is recieved from content script
 function gotMessage(message, sender, sendResponse) {
-  setTheme(message.theme_color);
+
+  var theme_color = message.theme_color
+  var updated_tab = sender.tab
+
+  setTheme(theme_color, updated_tab);
 }
 
 // Ping content script
 function update(activeInfo) {
-  rsp = browser.tabs.sendMessage(activeInfo.tabId, "msg").catch(reset);
+  rsp = browser.tabs.sendMessage(activeInfo.tabId, "msg");
 }
 
 // Reset to default browser theme
@@ -66,7 +87,7 @@ browser.runtime.onMessage.addListener(gotMessage);
 
 // Whenever tab switches or changes pages, get update 
 browser.tabs.onActivated.addListener(update);
-browser.webNavigation.onCompleted.addListener(update);
+// browser.webNavigation.onCompleted.addListener(update);
 browser.webNavigation.onDOMContentLoaded.addListener(update);
-browser.windows.onFocusChanged.addListener(update)
-browser.tabs.onCreated.addListener(update)
+// browser.windows.onFocusChanged.addListener(update)
+browser.tabs.onCreated.addListener(reset)

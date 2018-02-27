@@ -2,7 +2,7 @@
   "name": "Colorize!",
   "description": "Colorize tabs based on individual website theme-color!",
   "homepage_url": "https://github.com/JosephSamela/colorize-tabs",
-  "version": "1.0",
+  "version": "2.0",
   "icons": {
     "48": "icon48.png",
     "96": "icon96.png"
